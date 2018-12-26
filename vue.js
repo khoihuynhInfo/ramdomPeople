@@ -6,7 +6,7 @@ var demo = new Vue({
     },
     created: function () {
         // after view loaded and readly
-        // call api at here so fire
+        // call api at here so good greet
         this.fetchPeoples();
     },
     methods: {
@@ -24,7 +24,6 @@ var demo = new Vue({
     },
     watch: {
         peoples: function (newList) {
-            console.log(newList);
             (typeof newList === 'object' && newList) && (setTimeout(() => {
                 this.isLoading = false;
             }, 1000));
