@@ -14,8 +14,6 @@
 
 <body>
     <div id="list-people">
-
-
         <h1 class="title-custom">FETCH PEOPLES INTO VUEJS </h1>
         <h1 class="title-custom" v-if="isLoading">Loading...</h1>
         <div class="container" v-else>
@@ -24,7 +22,6 @@
                 <p class="email-custom">{{people.name.first + ' ' + people.name.last}}</p>
             </div>
         </div>
-
         <div v-bind:class="{author: isLoading}"></div>
         name: Kleep, create: 26/12/2018
     </div>
