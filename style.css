@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+    background: #282c34;
+    font-size: 16px;
+}
+
+#list-people{
+   color: #ffff;
+}
+
+.title-custom{
+    text-align: center;
+    letter-spacing: .2em;
+    font-size: calc(2rem + 10px);
+}
+
+.container{
+    margin: 0 auto;
+    overflow: scroll;
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    display: flex;
+    /* justify-content: flex-start;   */
+    align-content: space-around;
+    flex-flow: row wrap;
+}
+
+.item-custom{
+    margin: 5px;
+    padding: 15px;
+    /* flex:1; */
+    width: 150px;
+    height: 120px;
+    border: 1px solid silver;
+}
+
+.author{
+    /* margin-left: 5px; */
+    font-size: 1em;
+    text-align: center;
+    margin: 10px;
+}
+
+.img-custom{
+    width: 100%;
+    height: 100%; 
+}
+.email-custom{
+
+    /* position: relative; */
+}

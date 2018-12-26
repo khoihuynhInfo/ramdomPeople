@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuejs</title>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="list-people">
+
+
+        <h1 class="title-custom">FETCH PEOPLES INTO VUEJS </h1>
+        <h1 class="title-custom" v-if="isLoading">Loading...</h1>
+        <div class="container" v-else>
+            <div class="item-custom" v-for="people in peoples">
+                <img class="img-custom" v-bind:src="people.picture.large" alt="">
+                <p class="email-custom">{{people.name.first + ' ' + people.name.last}}</p>
+            </div>
+        </div>
+
+        <div v-bind:class="{author: isLoading}"></div>
+        name: Kleep, create: 26/12/2018
+    </div>
+    </div>
+
+    <script src="vue.js"></script>
+</body>
+
+</html>
